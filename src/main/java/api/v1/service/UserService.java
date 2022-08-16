@@ -1,6 +1,5 @@
 package api.v1.service;
 
-import api.v1.dto.GetUserDto;
 import api.v1.entity.User;
 import api.v1.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
@@ -23,8 +22,8 @@ public class UserService {
         return userRepository.findAll(Sort.by(Sort.Direction.DESC, "createdAt"));
     }
 
-    public List<User> findUsersByCondition(GetUserDto getUserDto){
-        return userRepository.findUsersByCondition(getUserDto);
+    public List<User> findUsersByCondition(String location, String type){
+        return userRepository.findUsersByCondition(location, type);
     }
 
 }

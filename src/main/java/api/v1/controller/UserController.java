@@ -1,6 +1,5 @@
 package api.v1.controller;
 
-import api.v1.dto.GetUserDto;
 import api.v1.dto.PostUserDto;
 import api.v1.dto.UserMapper;
 import api.v1.entity.User;
@@ -8,6 +7,7 @@ import api.v1.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.lang.Nullable;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -31,9 +31,10 @@ public class UserController {
     }
 
     @GetMapping("/users")
-    public ResponseEntity<List<User>> getUsersByCondition(@RequestBody GetUserDto getUserDto){
+    public ResponseEntity<List<User>> getUsersByCondition(@RequestParam @Nullable String location,
+                                                          @RequestParam @Nullable String type ){
         // 조건 (지역, 업종)으로 조회
-        return ResponseEntity.ok(userService.findUsersByCondition(getUserDto));
+        return ResponseEntity.ok(userService.findUsersByCondition(location, type));
     }
 
 }
