@@ -1,4 +1,4 @@
-package api.v1.dto;
+package api.v1.dto.request;
 
 import api.v1.entity.User;
 import lombok.Getter;

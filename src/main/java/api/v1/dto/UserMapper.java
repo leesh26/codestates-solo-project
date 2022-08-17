@@ -1,5 +1,6 @@
 package api.v1.dto;
 
+import api.v1.dto.request.PostUserDto;
 import api.v1.entity.User;
 import org.mapstruct.Mapper;
 
