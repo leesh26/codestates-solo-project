@@ -13,12 +13,14 @@
 - `JPA`
 - `JUnit5 / Mockito`
 - `Asciidocs`
+- `Mapstruct 1.4.2`
 
 ### 문서/협업
 - Github
 
 ### ERD
-![image](https://user-images.githubusercontent.com/74662808/185072931-ae718ed3-75df-48d4-bf23-659ac79594ec.png)
+현재 구현은 임베디드 (변경 예정)
+![image](https://user-images.githubusercontent.com/74662808/185074950-8e778ba5-bfa5-4211-a90a-672e4b84399c.png)
   
 ## 3. 기능
   - 사이트 내 전체 회원 조회
