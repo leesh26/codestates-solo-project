@@ -25,16 +25,16 @@ include::{snippets}/get-user/response-fields.adoc[]
 
 === 특정 조건에 따른 회원 조회
 .curl-request
-include::{snippets}/get-user/curl-request.adoc[]
+include::{snippets}/get-user-by-condition/curl-request.adoc[]
 
 .http-request
-include::{snippets}/get-user/http-request.adoc[]
+include::{snippets}/get-user-by-condition/http-request.adoc[]
 
 .request-parameters
-include::{snippets}/get-user/request-parameters.adoc[]
+include::{snippets}/get-user-by-condition/request-parameters.adoc[]
 
 .http-response
-include::{snippets}/get-user/http-response.adoc[]
+include::{snippets}/get-user-by-condition/http-response.adoc[]
 
 .response-fields
-include::{snippets}/get-user/response-fields.adoc[]
+include::{snippets}/get-user-by-condition/response-fields.adoc[]

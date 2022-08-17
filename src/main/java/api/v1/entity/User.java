@@ -20,18 +20,16 @@ public class User extends BaseEntity{
 
     @Enumerated(EnumType.STRING)
     private Sex sex;
-    private String companyName;
-    private String companyType;
-    private String companyLocation;
+
+    @Embedded
+    private Company companyInfo;
 
     @Builder
-    public User(String name, String password, Sex sex, String companyName, String companyType, String companyLocation) {
+    public User(String name, String password, Sex sex, String companyName, String companyType, Company companyInfo) {
         this.name = name;
         this.password = password;
         this.sex = sex;
-        this.companyName = companyName;
-        this.companyType = companyType;
-        this.companyLocation = companyLocation;
+        this.companyInfo = companyInfo;
     }
 
     public enum Sex{

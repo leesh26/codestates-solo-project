@@ -30,13 +30,13 @@ public class CustomRepositoryImpl implements CustomRepository{
         if(StringUtils.isNullOrEmpty(location)){
             return null;
         }
-        return user.companyLocation.eq(location);
+        return user.companyInfo.location.eq(location);
     }
 
     private BooleanExpression eqType(String type){
         if(StringUtils.isNullOrEmpty(type)){
             return null;
         }
-        return user.companyType.eq(type);
+        return user.companyInfo.type.eq(type);
     }
 }

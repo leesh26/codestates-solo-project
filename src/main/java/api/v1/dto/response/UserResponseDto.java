@@ -1,5 +1,6 @@
 package api.v1.dto.response;
 
+import api.v1.entity.Company;
 import lombok.*;
 
 @Data
@@ -8,7 +9,5 @@ public class UserResponseDto {
     Long id;
     String name;
     String sex;
-    String companyName;
-    String companyType;
-    String companyLocation;
+    Company company;
 }
