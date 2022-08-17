@@ -1,0 +1,40 @@
+= 전국 사업자 연합 커뮤니티 API document
+:sectnums:
+:toc: left
+:toclevels: 4
+:toc-title: Table of Contents
+:source-highlighter: prettify
+
+Lee So Hee <dlthgml1026@naver.com>
+v1.0.0, 2022.08.17
+
+***
+== UserController
+=== 회원 조회
+.curl-request
+include::{snippets}/get-user/curl-request.adoc[]
+
+.http-request
+include::{snippets}/get-user/http-request.adoc[]
+
+.http-response
+include::{snippets}/get-user/http-response.adoc[]
+
+.response-fields
+include::{snippets}/get-user/response-fields.adoc[]
+
+=== 특정 조건에 따른 회원 조회
+.curl-request
+include::{snippets}/get-user/curl-request.adoc[]
+
+.http-request
+include::{snippets}/get-user/http-request.adoc[]
+
+.request-parameters
+include::{snippets}/get-user/request-parameters.adoc[]
+
+.http-response
+include::{snippets}/get-user/http-response.adoc[]
+
+.response-fields
+include::{snippets}/get-user/response-fields.adoc[]
