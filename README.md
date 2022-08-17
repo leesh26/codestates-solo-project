@@ -18,7 +18,7 @@
 - Github
 
 ### ERD
-![image](https://user-images.githubusercontent.com/74662808/185067407-d66b1a6d-53fc-4352-bc1f-61b430e43a65.png)
+![image](https://user-images.githubusercontent.com/74662808/185072931-ae718ed3-75df-48d4-bf23-659ac79594ec.png)
   
 ## 3. 기능
   - 사이트 내 전체 회원 조회
